@@ -1,0 +1,102 @@
+/* SkyTask Projects - Bootstrap 3.4.1 compatible, no additional framework */
+.sky-projects-page{direction:rtl;color:#19243b}
+.sky-projects-page *{box-sizing:border-box}
+.sky-projects-header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}
+.sky-projects-eyebrow{font-size:10px;color:#8291aa;margin-bottom:7px}
+.sky-projects-header h1{font-size:22px;font-weight:700;margin:0 0 7px}
+.sky-projects-header p{font-size:11px;color:#71819e;margin:0}
+.sky-projects-header-actions{display:flex;gap:9px;flex-wrap:wrap}
+.sky-project-primary,.sky-project-outline{border-radius:8px;padding:10px 16px;font-size:10px}
+.sky-project-primary{background:#2861ed;border:1px solid #2861ed;color:#fff}
+.sky-project-primary:hover,.sky-project-primary:focus{background:#174fd7;color:#fff}
+.sky-project-outline{background:#fff;border:1px solid #e1e8f2;color:#2861ed}
+.sky-project-outline:hover,.sky-project-outline:focus{background:#f4f7ff;color:#2057df}
+.sky-project-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:18px}
+.sky-project-stat{background:#fff;border:1px solid #e4eaf3;border-radius:12px;padding:13px 15px;display:flex;align-items:center;gap:12px;min-height:84px;box-shadow:0 3px 10px rgba(26,48,86,.025)}
+.sky-project-stat-icon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex:none}
+.sky-project-stat small,.sky-project-stat em{display:block;font-size:10px;color:#71819e;font-style:normal}
+.sky-project-stat strong{display:block;font-size:22px;line-height:1.45;color:#19243b}
+.sky-project-stat em{font-size:9px;color:#94a0b4}
+.project-icon-blue{background:#eef4ff;color:#2861ed}.project-icon-green{background:#eafaf1;color:#16a45a}.project-icon-purple{background:#f3efff;color:#8056d9}.project-icon-orange{background:#fff5e8;color:#d87900}
+.sky-project-toolbar{background:#fff;border:1px solid #e4eaf3;border-radius:12px;padding:13px;margin-bottom:17px}
+.sky-project-tabs{display:flex;gap:5px;overflow-x:auto;padding-bottom:10px;border-bottom:1px solid #edf0f5;scrollbar-width:thin}
+.sky-project-tab{border:0;background:transparent;color:#71819e;padding:9px 11px;font-size:10px;white-space:nowrap;border-radius:7px;cursor:pointer}
+.sky-project-tab b{font-size:9px;background:#f1f4f9;border-radius:10px;padding:2px 5px;margin-right:3px}
+.sky-project-tab.is-active{color:#2861ed;background:#eef4ff;font-weight:700}
+.sky-project-tab.is-active b{background:#dce8ff;color:#2861ed}
+.sky-project-filters{display:flex;align-items:center;gap:9px;padding-top:12px;flex-wrap:wrap}
+.sky-project-search{position:relative;flex:1;min-width:190px}
+.sky-project-search span{position:absolute;right:11px;top:5px;color:#71819e;font-size:19px}
+.sky-project-search input,.sky-project-filters select{height:34px;border:1px solid #e4eaf3;background:#fff;border-radius:7px;color:#667895;font-size:10px;outline:0}
+.sky-project-search input{width:100%;padding:0 34px 0 10px}
+.sky-project-filters select{min-width:135px;padding:0 9px}
+.sky-project-search input:focus,.sky-project-filters select:focus{border-color:#9db9ff;box-shadow:0 0 0 2px #eef4ff}
+.sky-project-view-switch{display:flex;border:1px solid #e4eaf3;border-radius:7px;padding:2px}
+.sky-project-view-switch button{border:0;background:transparent;color:#71819e;border-radius:5px;width:29px;height:27px}
+.sky-project-view-switch button.is-active{background:#eef4ff;color:#2861ed}
+.sky-projects-content{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(285px,.8fr);gap:17px;align-items:start}
+.sky-projects-main{min-width:0}
+.sky-projects-result-head{display:flex;align-items:center;justify-content:space-between;margin:0 2px 11px}
+.sky-projects-result-head h2{font-size:14px;font-weight:700;margin:0}
+.sky-projects-result-head span{font-size:10px;color:#8795aa}
+.sky-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.sky-project-card{background:#fff;border:1px solid #e4eaf3;border-radius:11px;padding:14px;min-width:0;cursor:pointer;outline:0;transition:border-color .15s,box-shadow .15s}
+.sky-project-card:hover,.sky-project-card:focus{border-color:#b8ccff;box-shadow:0 3px 12px rgba(40,97,237,.06)}
+.sky-project-card.is-selected{border-color:#8eafff;box-shadow:0 0 0 2px #eef4ff}
+.sky-project-card-top{display:flex;align-items:center;gap:8px}
+.sky-project-color{width:9px;height:9px;border-radius:3px}
+.project-color-blue{background:#2861ed}.project-color-purple{background:#8056d9}.project-color-green{background:#16a45a}.project-color-orange{background:#d87900}
+.sky-project-status{display:inline-block;border-radius:5px;padding:4px 8px;font-size:9px}
+.project-status-active{background:#eafaf1;color:#16a45a}.project-status-completed{background:#eef4ff;color:#2861ed}.project-status-paused{background:#fff5e8;color:#c77a00}.project-status-archived{background:#f1f4f9;color:#75849c}
+.sky-project-more{margin-right:auto;border:0;background:transparent;color:#71819e;font-size:14px}
+.sky-project-card h3{font-size:12px;font-weight:700;margin:12px 0 7px}
+.sky-project-card>p{font-size:9px;color:#8291aa;line-height:1.9;margin:0;min-height:34px}
+.sky-project-card-meta{display:flex;flex-wrap:wrap;gap:6px 12px;padding:10px 0;border-bottom:1px solid #edf0f5;margin-top:5px}
+.sky-project-card-meta span{font-size:8px;color:#71819e}
+.sky-project-progress-head{display:flex;justify-content:space-between;align-items:center;margin:10px 0 6px}
+.sky-project-progress-head span{font-size:9px;color:#8291aa}.sky-project-progress-head strong{font-size:10px;color:#2861ed}
+.sky-progress-track{height:6px;background:#edf1f7;border-radius:8px;overflow:hidden}
+.sky-progress-track>span{display:block;height:100%;background:#2861ed;border-radius:8px}
+.sky-progress-track.progress-green>span{background:#16a45a}.sky-progress-track.progress-orange>span{background:#d87900}
+.sky-project-card-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.sky-project-card-bottom small{font-size:8px;color:#94a0b4}
+.sky-project-avatars{display:flex;align-items:center;direction:ltr;padding-left:4px}
+.sky-project-avatars span,.sky-project-avatars i{width:23px;height:23px;border-radius:50%;border:2px solid #fff;background:#e8efff;color:#2861ed;display:flex;align-items:center;justify-content:center;font-size:8px;font-style:normal;margin-left:-5px}
+.sky-project-avatars span:nth-child(2){background:#eafaf1;color:#16a45a}.sky-project-avatars span:nth-child(3){background:#fff1e6;color:#c77a00}.sky-project-avatars i{background:#f1f4f9;color:#71819e}
+.sky-project-pagination{display:flex;justify-content:space-between;align-items:center;background:#fff;border:1px solid #e4eaf3;border-radius:9px;padding:9px 12px;margin-top:12px}
+.sky-project-pagination>span{font-size:9px;color:#8291aa}
+.sky-project-pagination div{display:flex;gap:4px}
+.sky-project-pagination button{border:0;background:transparent;color:#71819e;border-radius:5px;min-width:27px;height:26px;font-size:10px}
+.sky-project-pagination button.current{background:#2861ed;color:#fff}.sky-project-pagination button:disabled{opacity:.4}
+.sky-project-detail{background:#fff;border:1px solid #e4eaf3;border-radius:12px;padding:16px;position:sticky;top:15px;min-width:0}
+.sky-project-detail-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.sky-project-detail-head strong{font-size:12px}.sky-project-detail-head button{border:0;background:transparent;color:#71819e;font-size:20px}
+.sky-project-detail-status{font-size:9px}
+.sky-project-detail h2{font-size:15px;font-weight:700;margin:10px 0 8px}
+.sky-project-detail>p{font-size:10px;line-height:2;color:#8291aa;margin:0 0 15px}
+.sky-detail-progress{padding:13px 0;border-top:1px solid #edf0f5;border-bottom:1px solid #edf0f5}
+.sky-detail-progress>div:first-child{display:flex;justify-content:space-between;margin-bottom:9px}
+.sky-detail-progress strong{font-size:10px}.sky-detail-progress b{font-size:10px;color:#2861ed}
+.sky-project-detail-info{display:grid;grid-template-columns:1fr 1fr;gap:13px 10px;padding:14px 0;border-bottom:1px solid #edf0f5}
+.sky-project-detail-info div{display:flex;flex-direction:column;gap:5px}
+.sky-project-detail-info small{font-size:9px;color:#94a0b4}.sky-project-detail-info strong{font-size:10px;color:#34435d;font-weight:500}
+.sky-project-detail-section{padding:13px 0;border-bottom:1px solid #edf0f5}
+.sky-project-detail-section-head{display:flex;justify-content:space-between;margin-bottom:10px}
+.sky-project-detail-section-head strong{font-size:10px}.sky-project-detail-section-head a{font-size:9px;color:#2861ed}
+.sky-project-member{display:flex;align-items:center;gap:8px;padding:6px 0}
+.sky-project-member>span{width:29px;height:29px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#eef4ff;color:#2861ed;font-size:11px}
+.sky-project-member div{display:flex;flex-direction:column;gap:3px}.sky-project-member strong{font-size:9px}.sky-project-member small{font-size:8px;color:#94a0b4}
+.sky-project-detail-actions{display:grid;gap:7px;padding-top:13px}
+.sky-project-detail-actions .btn{text-align:center}
+.sky-project-empty{background:#fff;border:1px solid #e4eaf3;border-radius:11px;padding:35px 15px;text-align:center}
+.sky-project-empty[hidden]{display:none!important}
+.sky-project-empty>span{font-size:25px;color:#2861ed}.sky-project-empty h3{font-size:13px}.sky-project-empty p{font-size:10px;color:#8291aa}
+.sky-project-grid.is-list{grid-template-columns:1fr}
+.sky-project-grid.is-list .sky-project-card{display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
+.sky-project-grid.is-list .sky-project-card-top,.sky-project-grid.is-list .sky-project-card h3,.sky-project-grid.is-list .sky-project-card>p{grid-column:1/-1}
+.sky-project-grid.is-list .sky-project-card-meta{grid-column:1;align-self:end}
+.sky-project-grid.is-list .sky-project-progress-head,.sky-project-grid.is-list .sky-progress-track{grid-column:2}
+.sky-project-grid.is-list .sky-project-card-bottom{grid-column:1/-1}
+@media(max-width:1100px){.sky-projects-content{grid-template-columns:minmax(0,1.35fr) minmax(265px,.9fr)}.sky-project-grid{grid-template-columns:1fr}}
+@media(max-width:850px){.sky-project-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.sky-projects-content{grid-template-columns:1fr}.sky-project-detail{position:static}.sky-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.sky-projects-header{align-items:flex-start;flex-direction:column}.sky-projects-header h1{font-size:19px}.sky-projects-header-actions{width:100%}.sky-projects-header-actions .btn{flex:1}.sky-project-stats{gap:8px}.sky-project-stat{padding:10px;min-height:75px;gap:8px}.sky-project-stat-icon{width:29px;height:29px;font-size:15px}.sky-project-stat strong{font-size:19px}.sky-project-stat small{font-size:9px}.sky-project-stat em{font-size:8px}.sky-project-toolbar{padding:10px}.sky-project-filters{display:grid;grid-template-columns:1fr 1fr}.sky-project-search{grid-column:1/-1}.sky-project-filters select{min-width:0;width:100%}.sky-project-view-switch{grid-column:1/-1;justify-self:start}.sky-project-tab{padding:8px 9px}.sky-project-grid{grid-template-columns:1fr}.sky-project-grid.is-list .sky-project-card{display:block}.sky-project-card>p{min-height:0}.sky-projects-result-head h2{font-size:12px}.sky-project-pagination{gap:8px}.sky-project-pagination>span{font-size:8px}}

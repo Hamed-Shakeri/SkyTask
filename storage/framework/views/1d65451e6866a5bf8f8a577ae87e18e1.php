@@ -1,0 +1,1 @@
+<?php /**PATH C:\Users\hamed\Desktop\SkyTask\resources\views/errors/404.blade.php ENDPATH**/ ?>

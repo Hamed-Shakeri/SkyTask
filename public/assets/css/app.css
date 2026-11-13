@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../fonts/iranyekanwebregular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../fonts/iranyekanwebmedium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../fonts/iranyekanwebbold.woff') format('woff');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'IRANYekan', sans-serif;
+    direction: rtl;
+}

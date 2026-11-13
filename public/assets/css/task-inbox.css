@@ -1,0 +1,105 @@
+/* SkyTask - Task Inbox. Bootstrap 3.4.1 is loaded by layouts.app */
+.sky-inbox-page{direction:rtl;color:#19243b}
+.sky-inbox-page *{box-sizing:border-box}
+.sky-inbox-header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}
+.sky-page-eyebrow{font-size:10px;color:#8291aa;margin-bottom:7px}
+.sky-inbox-header h1{font-size:22px;font-weight:700;margin:0 0 7px}
+.sky-inbox-header p{font-size:11px;color:#71819e;margin:0}
+.sky-inbox-primary{background:#2861ed;color:#fff;border:1px solid #2861ed;border-radius:8px;padding:10px 17px;font-size:11px;font-weight:500}
+.sky-inbox-primary:hover,.sky-inbox-primary:focus{background:#174fd7;color:#fff}
+.sky-inbox-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:18px}
+.sky-inbox-stat{background:#fff;border:1px solid #e4eaf3;border-radius:12px;padding:13px 15px;display:flex;align-items:center;gap:12px;min-height:84px;box-shadow:0 3px 10px rgba(26,48,86,.025)}
+.sky-inbox-stat-icon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;font-style:normal;flex:none}
+.sky-inbox-stat small,.sky-inbox-stat em{display:block;font-size:10px;color:#71819e;font-style:normal}
+.sky-inbox-stat strong{display:block;font-size:22px;line-height:1.45;color:#19243b}
+.sky-inbox-stat em{font-size:9px;color:#94a0b4}
+.stat-blue{background:#eef4ff;color:#2861ed}.stat-green{background:#eafaf1;color:#16a45a}.stat-orange{background:#fff5e8;color:#d87900}.stat-red{background:#fff0f0;color:#e34444}
+.sky-inbox-toolbar{background:#fff;border:1px solid #e4eaf3;border-radius:12px;padding:13px;margin-bottom:17px}
+.sky-inbox-tabs{display:flex;gap:5px;overflow-x:auto;padding-bottom:10px;border-bottom:1px solid #edf0f5;scrollbar-width:thin}
+.sky-inbox-tab{border:0;background:transparent;color:#71819e;padding:9px 11px;font-size:10px;white-space:nowrap;border-radius:7px;cursor:pointer}
+.sky-inbox-tab b{font-size:9px;background:#f1f4f9;border-radius:10px;padding:2px 5px;margin-right:3px}
+.sky-inbox-tab.is-active{color:#2861ed;background:#eef4ff;font-weight:700}
+.sky-inbox-tab.is-active b{background:#dce8ff;color:#2861ed}
+.sky-inbox-filters{display:flex;align-items:center;gap:9px;padding-top:12px;flex-wrap:wrap}
+.sky-inbox-search{position:relative;flex:1;min-width:190px}
+.sky-inbox-search span{position:absolute;right:11px;top:5px;color:#71819e;font-size:19px}
+.sky-inbox-search input,.sky-inbox-filters select{height:34px;border:1px solid #e4eaf3;background:#fff;border-radius:7px;color:#667895;font-size:10px;outline:0}
+.sky-inbox-search input{width:100%;padding:0 34px 0 10px}
+.sky-inbox-filters select{min-width:130px;padding:0 9px}
+.sky-inbox-search input:focus,.sky-inbox-filters select:focus{border-color:#9db9ff;box-shadow:0 0 0 2px #eef4ff}
+.sky-inbox-reset{border:0;background:transparent;color:#2861ed;font-size:10px;padding:8px}
+.sky-inbox-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(290px,.85fr);gap:17px;align-items:start}
+.sky-inbox-list-column{min-width:0}
+.sky-inbox-list-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 10px;padding:0 3px}
+.sky-inbox-list-head div{display:flex;align-items:center;gap:10px}
+.sky-inbox-list-head h2{font-size:14px;font-weight:700;margin:0}
+.sky-inbox-list-head span{font-size:10px;color:#8795aa}
+.sky-view-toggle{border:1px solid #e4eaf3;background:#fff;color:#71819e;border-radius:7px;width:32px;height:30px}
+.sky-view-toggle.is-selected{color:#2861ed;background:#eef4ff;border-color:#dce8ff}
+.sky-task-list{display:flex;flex-direction:column;gap:8px}
+.sky-task-card{background:#fff;border:1px solid #e4eaf3;border-radius:10px;padding:13px 14px;display:flex;align-items:center;justify-content:space-between;gap:15px;cursor:pointer;transition:border-color .15s,box-shadow .15s;outline:0}
+.sky-task-card:hover,.sky-task-card:focus{border-color:#b8ccff;box-shadow:0 3px 12px rgba(40,97,237,.06)}
+.sky-task-card.is-selected{border-color:#8eafff;box-shadow:0 0 0 2px #eef4ff}
+.sky-task-card-main{display:flex;align-items:center;gap:10px;min-width:0}
+.sky-task-check{width:16px;height:16px;border:1px solid #d5deeb;border-radius:5px;flex:none}
+.sky-task-card.is-selected .sky-task-check{border-color:#2861ed;background:#2861ed;box-shadow:inset 0 0 0 4px #fff}
+.sky-task-card-copy{min-width:0}
+.sky-task-card-copy strong{display:block;font-size:11px;color:#19243b;margin-bottom:6px}
+.sky-task-card-copy small{display:block;font-size:9px;color:#8291aa}
+.sky-task-card-copy small i{font-style:normal;margin:0 4px}
+.sky-task-card-meta{display:flex;align-items:center;gap:8px;flex:none}
+.sky-task-card-meta>small{font-size:9px;color:#8291aa;white-space:nowrap}
+.sky-priority,.sky-status{display:inline-block;padding:5px 8px;border-radius:5px;font-size:9px;white-space:nowrap;min-width:56px;text-align:center}
+.priority-high{background:#fff5e6;color:#bd7400}.priority-urgent{background:#fff0f0;color:#e34444}.priority-medium{background:#f1f4f9;color:#75849c}.priority-low{background:#eafaf1;color:#16a45a}
+.status-progress{background:#edf3ff;color:#2861ed}.status-approval{background:#fff6e8;color:#c77a00}.status-done{background:#eafaf1;color:#16a45a}.status-late{background:#fff0f0;color:#e34444}.status-paused{background:#f1f4f9;color:#75849c}
+.sky-task-more{border:0;background:transparent;color:#71819e;font-size:15px;padding:2px}
+.sky-inbox-pagination{display:flex;justify-content:space-between;align-items:center;background:#fff;border:1px solid #e4eaf3;border-radius:9px;padding:9px 12px;margin-top:12px}
+.sky-inbox-pagination>span{font-size:9px;color:#8291aa}
+.sky-inbox-pagination div{display:flex;gap:4px}
+.sky-inbox-pagination button{border:0;background:transparent;color:#71819e;border-radius:5px;min-width:27px;height:26px;font-size:10px}
+.sky-inbox-pagination button.current{background:#2861ed;color:#fff}.sky-inbox-pagination button:disabled{opacity:.4}
+.sky-task-detail{background:#fff;border:1px solid #e4eaf3;border-radius:12px;padding:16px;position:sticky;top:15px;min-width:0}
+.sky-detail-top{display:flex;justify-content:space-between;align-items:center;color:#71819e;font-size:10px;padding-bottom:12px;border-bottom:1px solid #edf0f5}
+.sky-detail-top small{font-size:9px;margin-right:7px;color:#9aa6b8}
+.sky-detail-top button{border:0;background:transparent;color:#71819e;font-size:20px;line-height:1}
+.sky-detail-title-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:14px 0 10px}
+.sky-detail-title-row h2{font-size:14px;font-weight:700;margin:0}
+.sky-detail-description{font-size:10px;line-height:2.1;color:#71819e;margin:0 0 14px}
+.sky-detail-info{display:grid;grid-template-columns:1fr 1fr;gap:13px 10px;padding:13px 0;border-top:1px solid #edf0f5;border-bottom:1px solid #edf0f5}
+.sky-detail-info div{display:flex;flex-direction:column;gap:5px}
+.sky-detail-info small{font-size:9px;color:#94a0b4}
+.sky-detail-info strong{font-size:10px;color:#34435d;font-weight:500}
+.sky-detail-section{padding:13px 0;border-bottom:1px solid #edf0f5}
+.sky-detail-section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}
+.sky-detail-section-head strong,.sky-history>strong{font-size:10px}
+.sky-detail-link{font-size:9px;color:#2861ed}
+.sky-attachment{display:flex;align-items:center;gap:9px;background:#f7f9fc;border-radius:7px;padding:9px}
+.sky-file-icon{width:29px;height:29px;border-radius:6px;background:#edf3ff;color:#2861ed;display:flex;align-items:center;justify-content:center;font-size:16px}
+.sky-attachment div{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}
+.sky-attachment strong{font-size:9px}.sky-attachment small{font-size:8px;color:#94a0b4}
+.sky-attachment button{border:0;background:transparent;color:#2861ed;font-size:17px}
+.sky-followup{display:flex;align-items:flex-start;gap:8px;background:#f7f9fc;padding:9px;border-radius:7px}
+.sky-followup>div{min-width:0}
+.sky-followup strong{font-size:9px;display:inline-block;margin-left:5px}
+.sky-followup small{font-size:8px;color:#94a0b4}
+.sky-followup p{font-size:9px;line-height:1.9;color:#71819e;margin:5px 0 0}
+.sky-history{border-bottom:0}
+.sky-history ul{list-style:none;padding:9px 0 0;margin:0}
+.sky-history li{display:flex;align-items:flex-start;gap:9px;padding:5px 0;font-size:9px;color:#647795}
+.sky-history li i{width:7px;height:7px;border-radius:50%;background:#2861ed;margin-top:4px;flex:none}
+.sky-history li small{display:block;font-size:8px;color:#94a0b4;margin-top:3px}
+.sky-detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.sky-detail-secondary{background:#f5f8fd;border:1px solid #e4eaf3;color:#2861ed;border-radius:7px;padding:8px 5px;font-size:9px}
+.sky-detail-complete{grid-column:1/-1;background:#168342;color:#fff;border:1px solid #168342;border-radius:7px;padding:9px;font-size:10px}
+.sky-detail-complete:hover{background:#116d36;color:#fff}
+.sky-detail-actions>small{grid-column:1/-1;text-align:center;color:#94a0b4;font-size:8px}
+.sky-inbox-access{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:24px 10px 5px}
+.sky-inbox-access strong{font-size:11px}.sky-inbox-access p{font-size:9px;line-height:2;color:#8291aa;margin:7px 0 0}
+.sky-inbox-empty{background:#fff;border:1px solid #e4eaf3;border-radius:11px;padding:35px 15px;text-align:center}
+.sky-empty-icon{display:flex;width:44px;height:44px;border-radius:12px;background:#eef4ff;color:#2861ed;align-items:center;justify-content:center;font-size:22px;margin:0 auto 12px}
+.sky-inbox-empty h3{font-size:13px;font-weight:700}
+.sky-inbox-empty p{font-size:10px;color:#8291aa;line-height:2}
+.sky-inbox-empty[hidden]{display:none!important}
+@media(max-width:1100px){.sky-inbox-layout{grid-template-columns:minmax(0,1.35fr) minmax(270px,.9fr)}.sky-task-card{align-items:flex-start;flex-direction:column}.sky-task-card-meta{width:100%;padding-right:25px;flex-wrap:wrap}}
+@media(max-width:850px){.sky-inbox-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.sky-inbox-layout{grid-template-columns:1fr}.sky-task-detail{position:static}.sky-task-card{flex-direction:row;align-items:center}.sky-task-card-meta{width:auto;padding:0}.sky-inbox-access{padding-top:18px}}
+@media(max-width:560px){.sky-inbox-header{align-items:flex-start;flex-direction:column}.sky-inbox-header h1{font-size:19px}.sky-inbox-header .sky-inbox-primary{width:100%;text-align:center}.sky-inbox-stats{gap:8px}.sky-inbox-stat{padding:10px;min-height:75px;gap:8px}.sky-inbox-stat-icon{width:29px;height:29px;font-size:15px}.sky-inbox-stat strong{font-size:19px}.sky-inbox-stat small{font-size:9px}.sky-inbox-stat em{font-size:8px}.sky-inbox-toolbar{padding:10px}.sky-inbox-filters{display:grid;grid-template-columns:1fr 1fr}.sky-inbox-search{grid-column:1/-1}.sky-inbox-filters select{min-width:0;width:100%}.sky-inbox-reset{grid-column:1/-1;text-align:right}.sky-inbox-tab{padding:8px 9px}.sky-task-card{align-items:flex-start;flex-direction:column;gap:10px;padding:12px}.sky-task-card-meta{width:100%;padding-right:26px;gap:6px}.sky-task-card-meta>small{margin-right:auto}.sky-task-card-copy strong{font-size:10px}.sky-task-card-copy small{font-size:8px}.sky-inbox-access{grid-template-columns:1fr;gap:12px;padding:18px 3px}.sky-inbox-pagination{gap:8px}.sky-inbox-pagination>span{font-size:8px}.sky-detail-title-row{align-items:flex-start;flex-direction:column}.sky-task-detail{padding:13px}}
